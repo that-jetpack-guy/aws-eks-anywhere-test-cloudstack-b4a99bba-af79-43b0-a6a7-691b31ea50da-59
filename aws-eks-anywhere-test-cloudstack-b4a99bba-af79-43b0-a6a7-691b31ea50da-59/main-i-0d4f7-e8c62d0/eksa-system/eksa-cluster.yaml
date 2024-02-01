@@ -2,7 +2,7 @@ apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: Cluster
 metadata:
   annotations:
-    anywhere.eks.amazonaws.com/management-components-version: v0.0.0-dev+build.8295
+    anywhere.eks.amazonaws.com/management-components-version: v0.0.0-dev+build.8299
   name: main-i-0d4f7-e8c62d0
   namespace: default
 spec:
@@ -25,7 +25,7 @@ spec:
   datacenterRef:
     kind: CloudStackDatacenterConfig
     name: main-i-0d4f7-e8c62d0
-  eksaVersion: v0.0.0-dev+build.8295
+  eksaVersion: v0.0.0-dev+build.8299
   externalEtcdConfiguration:
     count: 1
     machineGroupRef:
@@ -34,7 +34,7 @@ spec:
   gitOpsRef:
     kind: FluxConfig
     name: eksa-test
-  kubernetesVersion: "1.27"
+  kubernetesVersion: "1.28"
   machineHealthCheck:
     nodeStartupTimeout: 10m0s
     unhealthyMachineTimeout: 5m0s
@@ -77,7 +77,7 @@ spec:
   computeOffering:
     name: Large Instance
   template:
-    name: kubernetes-1-27-eks-21-redhat-9
+    name: kubernetes-1-28-eks-14-redhat-9
   users:
   - name: capc
     sshAuthorizedKeys:
@@ -94,7 +94,7 @@ spec:
   computeOffering:
     name: Large Instance
   template:
-    name: kubernetes-1-27-eks-21-redhat-9
+    name: kubernetes-1-28-eks-14-redhat-9
   users:
   - name: capc
     sshAuthorizedKeys:
@@ -113,7 +113,7 @@ spec:
   computeOffering:
     name: Large Instance
   template:
-    name: kubernetes-1-27-eks-21-redhat-9
+    name: kubernetes-1-28-eks-14-redhat-9
   users:
   - name: capc
     sshAuthorizedKeys:
